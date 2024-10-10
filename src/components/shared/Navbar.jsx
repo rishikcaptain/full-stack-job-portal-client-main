@@ -10,18 +10,18 @@ const Navbar = ({ navbarRef }) => {
             <div className="container">
                 <Logo />
                 <div className="flex justify-end items-center">
-                    <NavLink className="nav-item" to="/all-jobs">
-                        Jobs
-                    </NavLink>
-                    <NavLink className="nav-item hidden sm:block" to="/dashboard">
+                    <NavLink className="nav-item  bg-[#32c888] text-white px-6 py-2 rounded" to="/dashboard">
                         Dashboard
+                    </NavLink>
+                    <NavLink className="nav-item hidden sm:block" to="/all-jobs">
+                        Jobs
                     </NavLink>
                     <NavLink className="nav-item hidden sm:block" to="/salary">
                         Salary
                     </NavLink>
-                    <NavLink className="nav-item" to="/login">
+                    {/* <NavLink className="nav-item" to="/login">
                         <span className="bg-[#32c888] text-white px-6 py-2 rounded"> Login</span>
-                    </NavLink>
+                    </NavLink> */}
                 </div>
             </div>
         </Wrapper>
